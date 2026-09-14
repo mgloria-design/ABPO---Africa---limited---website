@@ -1,21 +1,18 @@
 <?php
 /**
- * db.php
  * Database connection for ABPO Africa Limited website.
- * Include this file at the top of any PHP page that needs DB access:
- *   require_once 'db.php';
  */
 
-// === EDIT THESE TO MATCH YOUR HOSTING ENVIRONMENT ===
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'abpo_africa');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-// ======================================================
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
+define('DB_NAME', getenv('DB_NAME') ?: 'abpo_africa');
+define('DB_USER', getenv('DB_USER') ?: 'root');
+define('DB_PASS', getenv('DB_PASS') ?: '');
 
 try {
     $pdo = new PDO(
-        "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4",
+        "mysql:host=" . DB_HOST .
+        ";dbname=" . DB_NAME .
+        ";charset=utf8mb4",
         DB_USER,
         DB_PASS,
         [
@@ -25,6 +22,8 @@ try {
         ]
     );
 } catch (PDOException $e) {
-    // In production, log this instead of displaying it.
-    die('Database connection failed: ' . htmlspecialchars($e->getMessage()));
+    error_log('Database connection failed: ' . $e->getMessage());
+
+    http_response_code(500);
+    die('Database connection failed.');
 }
