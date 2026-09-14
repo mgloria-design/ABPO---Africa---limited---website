@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Analytics & Business Insights | ABPO Africa Limited</title>
-<meta name="description" content="ABPO Africa Limited's Data Analytics & Business Insights services — business intelligence, data warehousing, predictive analytics and KPI reporting for organizations in Nairobi, Kenya and across Africa.">
+<title>Digital Solutions & Automation | ABPO Africa Limited</title>
+<meta name="description" content="ABPO Africa Limited's Digital Solutions & Automation services — custom software development, cloud migration, API integration and business process automation for organizations in Nairobi, Kenya and across Africa.">
 <meta name="theme-color" content="#0A1F44">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,18 +70,19 @@
 <section class="hero hero-flat" id="page-top">
     <div class="hero-content fade-in">
 
-      
+     
 
         <h1>
-            Data Analytics &amp; Business Insights
+            Digital Solutions &amp; Automation
         </h1>
         <p>
-            We turn data scattered across systems and spreadsheets into a clear,
-            reliable picture of your business — so decisions are backed by
-            evidence, not guesswork.
+            We design and build the software, cloud infrastructure and system
+            integrations that take manual, repetitive work off your team's plate —
+            so your people spend less time on process and more time on the business.
         </p>
-        
+    
 
+       
 
     </div>
 
@@ -99,32 +100,32 @@
                 <h5>WHAT WE DO</h5>
 
                 <h3>
-                    Turning Scattered Data
-                    Into Clear Decisions
+                    Turning Manual Work
+                    Into Automated Systems
                 </h3>
 
                 <p>
-                    Most organizations aren't short on data — they're short on a
-                    reliable way to see it. Numbers sit in disconnected systems,
-                    reports are rebuilt by hand every cycle, and by the time
-                    insight reaches decision-makers it's already out of date. We
-                    consolidate your data, build the dashboards and reporting
-                    frameworks that keep it current, and apply analytics that
-                    help you anticipate what's coming, not just explain what already happened.
+                    Most operational drag doesn't come from a single broken system —
+                    it comes from systems that don't talk to each other, processes
+                    that were never designed to scale, and teams re-entering the
+                    same data more than once. We build custom software, migrate and
+                    manage cloud infrastructure, and integrate the platforms you
+                    already rely on through APIs, so information moves automatically
+                    instead of manually.
                 </p>
 
-                
+              
 
             </div>
 
             <div class="about-panel fade-in">
                 <h4>Signs You May Need This</h4>
                 <ul>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Decisions are made on instinct because the data isn't easy to see.</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Reports are rebuilt manually in spreadsheets every reporting cycle.</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Different teams quote different numbers for the same metric.</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> Your data tells you what happened, but never what's likely next.</li>
-                    <li><i class="fas fa-check" aria-hidden="true"></i> You're unsure which KPIs actually reflect business performance.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Your team re-enters the same data across multiple systems.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Reports and reconciliations are still built manually in spreadsheets.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Your software systems don't share data with each other automatically.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> You're paying for on-premise infrastructure that's expensive to maintain.</li>
+                    <li><i class="fas fa-check" aria-hidden="true"></i> Growth is being slowed down by processes that were never built to scale.</li>
                 </ul>
             </div>
 
@@ -143,12 +144,12 @@
 
             <span>WHAT WE COVER</span>
 
-            <h2>Data Analytics &amp; Business Insights Capabilities</h2>
+            <h2>Digital Solutions &amp; Automation Capabilities</h2>
 
             <p>
-                From a single dashboard to a full analytics function, our team
-                covers the data work your organization needs to turn information
-                into decisions.
+                From a single integration to a full modernization program, our team
+                covers the software, infrastructure and automation work your
+                organization needs to operate more efficiently.
             </p>
 
         </div>
@@ -157,61 +158,61 @@
 
             <div class="card fade-in">
                 
-                <h3>Business Intelligence &amp; Dashboards</h3>
+                <h3>Custom Software Development</h3>
                 <p>
-                    We build live dashboards that give decision-makers a current,
-                    accurate view of performance without waiting on manual reports.
+                    We design and build web and business applications tailored to
+                    your workflows, rather than forcing your processes into off-the-shelf tools.
                 </p>
             </div>
 
             <div class="card fade-in">
                 
-                <h3>Data Warehousing &amp; Integration</h3>
+                <h3>Cloud Migration &amp; Infrastructure</h3>
                 <p>
-                    We consolidate data from across your systems into a single,
-                    reliable source of truth ready for analysis.
+                    We move your systems to the cloud and manage the infrastructure
+                    behind them, balancing cost, performance and reliability.
                 </p>
             </div>
 
             <div class="card fade-in">
                 
-                <h3>Predictive &amp; Advanced Analytics</h3>
+                <h3>API &amp; Systems Integration</h3>
                 <p>
-                    We apply statistical and predictive models to help you
-                    anticipate trends, risks and opportunities before they arrive.
+                    We connect the platforms you already use — CRM, ERP, payments,
+                    internal tools — so data flows between them without manual handling.
                 </p>
             </div>
 
             <div class="card fade-in">
                 
-                <h3>KPI &amp; Performance Reporting Frameworks</h3>
+                <h3>Business Process Automation</h3>
                 <p>
-                    We define the metrics that genuinely reflect business
-                    performance and build the reporting structure around them.
+                    We identify repetitive, rules-based work and automate it, freeing
+                    your team to focus on judgment-based tasks that actually need a person.
                 </p>
             </div>
 
             <div class="card fade-in">
                 
-                <h3>Data Quality &amp; Governance</h3>
+                <h3>Legacy System Modernization</h3>
                 <p>
-                    We put the standards and processes in place to keep your data
-                    accurate, consistent and trustworthy over time.
+                    We assess aging systems and modernize or replace them without
+                    disrupting the operations that depend on them.
                 </p>
             </div>
 
             <div class="card fade-in">
-            
-                <h3>Data Visualization &amp; Self-Service Analytics</h3>
+                
+                <h3>Application Support &amp; Maintenance</h3>
                 <p>
-                    We build tools your team can explore on their own, reducing
-                    reliance on ad hoc requests for one-off reports.
+                    We keep the software we build — and systems we integrate —
+                    running reliably long after go-live.
                 </p>
             </div>
 
         </div>
 
-        
+       
 
     </div>
 
@@ -219,13 +220,13 @@
 
 <!-- CTA -->
 <section class="service-cta">
-    <h2>Ready to Make Decisions Backed by Data?</h2>
+    <h2>Ready to Automate the Work That's Slowing You Down?</h2>
     <p>
-        Tell us what you're trying to understand about your business —
-        we'll show you what the data can actually reveal.
+        Tell us about the process, system or workflow that's costing your team
+        the most time — we'll show you what a solution could look like.
     </p>
     <div class="btns">
-        <a href="index.php#contact" class="btn-gold">Start With a Data Assessment</a>
+        <a href="index.php#contact" class="btn-gold">Start a Conversation</a>
     </div>
 </section>
 

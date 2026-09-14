@@ -1,14 +1,11 @@
--- ====================================================
--- ABPO Africa Limited — Blog / Insights Database Schema
--- ====================================================
 
-CREATE DATABASE IF NOT EXISTS abpo_africa CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE abpo_africa;
+
+
 
 -- ----------------------------
 -- Categories
 -- ----------------------------
-CREATE TABLE IF NOT EXISTS blog_categories (
+CREATE TABLE  blog_categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     slug VARCHAR(120) NOT NULL UNIQUE,
@@ -18,7 +15,7 @@ CREATE TABLE IF NOT EXISTS blog_categories (
 -- ----------------------------
 -- Authors
 -- ----------------------------
-CREATE TABLE IF NOT EXISTS blog_authors (
+CREATE TABLE  blog_authors (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
     title VARCHAR(150) DEFAULT NULL,
@@ -30,7 +27,7 @@ CREATE TABLE IF NOT EXISTS blog_authors (
 -- ----------------------------
 -- Posts
 -- ----------------------------
-CREATE TABLE IF NOT EXISTS blog_posts (
+CREATE TABLE  blog_posts (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
     slug VARCHAR(255) NOT NULL UNIQUE,

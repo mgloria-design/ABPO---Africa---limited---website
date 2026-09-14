@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ABPO Africa Limited — Shaping Africa's Digital Future</title>
-<meta name="description" content="ABPO Africa Limited — IT Risk Advisory & Analytics, Business Process Outsourcing, Fraud & Forensic Investigation in Nairobi, Kenya.">
+<meta name="description" content="ABPO Africa Limited — IT Risk & Cybersecurity, Digital Solutions & Automation, Fraud & Forensic Investigation, BPO & Managed Services in Nairobi, Kenya.">
 <meta name="theme-color" content="#0A1F44">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,11 +35,12 @@
           <i class="fas fa-chevron-down dropdown-caret" aria-hidden="true"></i>
         </a>
         <div class="dropdown-content">
-          <a href="it-risk-advisory.php"> IT Risk Advisory & Analytics</a>
-          <a href="Business-process-outsourcing.php">Business Process Outsourcing</a>
-          <a href="Fraud-forensic-investigation.php"> Fraud & Forensic Investigation</a>
-          <a href="risk-management-advisory.php"> Risk Management & Advisory</a>
+          <a href="it-risk-advisory.php">IT Risk & Cybersecurity</a>
+          <a href="digital-solutions-automation.php">Digital Solutions & Automation</a>
+          <a href="Fraud-forensic-investigation.php">Fraud & Forensic Investigation</a>
+          <a href="Business-process-outsourcing.php">BPO & Managed Services</a>
           <a href="Data-analytics-business-insights.php">Data Analytics & Business Insights</a>
+          <a href="risk-management-advisory.php">Risk Management & Data Recovery</a>
         </div>
       </div>
 
@@ -84,9 +85,7 @@
                 Explore Services
             </a>
 
-            <a href="#contact" class="btn-outline">
-                Talk to an Expert
-            </a>
+            
         </div>
 
     </div>
@@ -123,18 +122,11 @@
 
                 <p>
 
-                    ABPO Africa Limited delivers innovative
-                    IT Risk Advisory, Data Analytics,
-                    Business Process Outsourcing,
-                    Fraud Investigation and Risk Management
-                    solutions that help organizations
-                    grow securely.
+                    ABPO Africa Limited is an IT solutions firm focused on turning technological capability into business advantage. We work at the intersection of technology, business operations and emerging opportunity, helping organizations make better use of the systems, information and digital capabilities that shape how they work. Rather than treating technology as an end in itself, we look at the challenges behind it—understanding how businesses operate, where complexity exists and where technology can create a better way forward. From digital solutions and technology services to business process improvement, we develop practical approaches that strengthen the way organizations function today while preparing them for what comes next.
 
                 </p>
 
-                <a href="#services" class="btn-primary">
-                    Learn More
-                </a>
+                
 
             </div>
 
@@ -144,21 +136,27 @@
 
 </section>
 
-<!-- OUR CORE VALUES -->
+<!-- WHY CHOOSE ABPO -->
 <section class="why-section" id="why-us">
 
     <div class="container">
 
         <div class="section-header fade-in">
 
-            <span>WHY CHOOSE ABPO</span>
+            <span>WHY CHOOSE ABPO AFRICA LIMITED</span>
 
-            <h2>Driving Business Excellence Through Technology, Risk &amp; Strategic Advisory</h2>
+            <h2>Where Technology Meets Business Intelligence</h2>
+
+            <p class="lead">
+                Technology is only valuable when it creates a better way of doing business.
+            </p>
 
             <p>
-                At ABPO Africa Limited, we deliver tailored, innovative and
-                results-driven solutions that help organizations strengthen
-                governance, improve efficiency and achieve sustainable growth.
+                At ABPO Africa Limited, we combine technology, business insight and
+                professional expertise to help organizations operate smarter, manage risk
+                and unlock new opportunities. We look beyond the immediate technical
+                challenge to understand the processes, people and objectives behind
+                it—so the solutions we deliver are built for real business impact.
             </p>
 
         </div>
@@ -166,71 +164,71 @@
         <div class="bento-grid">
 
             <div class="card fade-in">
-
                 
-
-                <h3>Experienced Professionals</h3>
-
+                <h3>We Think Beyond the Technology</h3>
                 <p>
-                    Our multidisciplinary team combines expertise in IT Risk,
-                    Audit, Governance, Analytics and Advisory services.
+                    We don't simply recommend systems or tools. We understand your
+                    business environment, identify the underlying challenge and design
+                    technology solutions around what your organization is trying to achieve.
                 </p>
-
             </div>
 
             <div class="card fade-in">
-
                 
-
-                <h3>Data-Driven Decisions</h3>
-
+                <h3>We Connect Technology With Risk</h3>
                 <p>
-                    We transform business data into actionable insights that
-                    support strategic decision-making.
+                    Efficiency without control creates exposure. Our approach considers
+                    security, governance, controls, continuity and operational risk
+                    alongside technology and performance.
                 </p>
-
-            </div>
-
-            <div class="card wide-card fade-in">
-
-                
-
-                <h3>Tailored Business Solutions</h3>
-
-                <p>
-                    Every engagement is customized to your organization's
-                    objectives, delivering scalable, innovative and
-                    sustainable solutions.
-                </p>
-
             </div>
 
             <div class="card fade-in">
-
                 
-
-                <h3>Client Partnership</h3>
-
+                <h3>We Build for the Way You Work</h3>
                 <p>
-                    We build long-term partnerships based on trust,
-                    collaboration and measurable results.
+                    Your organization is unique. We develop and implement solutions that
+                    align with your workflows, requirements and growth plans rather than
+                    applying one-size-fits-all approaches.
                 </p>
-
             </div>
 
             <div class="card fade-in">
-
-               
-
-                <h3>Integrity &amp; Confidentiality</h3>
-
+                
+                <h3>We Turn Complexity Into Clarity</h3>
                 <p>
-                    Professional ethics, confidentiality and accountability
-                    are at the heart of everything we do.
+                    From technology challenges and operational inefficiencies to risk and
+                    business-process complexities, we simplify problems and turn them into
+                    structured, actionable solutions.
                 </p>
-
             </div>
 
+            <div class="card fade-in">
+                
+                <h3>We Deliver Beyond Implementation</h3>
+                <p>
+                    Our relationship does not end when a solution goes live. We support,
+                    monitor, optimize and continuously improve solutions as your business
+                    evolves.
+                </p>
+            </div>
+
+            <div class="card fade-in">
+                
+                <h3>One Partner. Multiple Perspectives.</h3>
+                <p>
+                    Technology, business process, risk, advisory and forensic expertise
+                    come together under one organization—giving our clients a broader
+                    perspective when solving complex business challenges.
+                </p>
+            </div>
+
+        </div>
+
+     
+
+        <div class="section-tagline fade-in">
+            ABPO Africa Limited — Technology, Insight and Excellence Working Together.
         </div>
 
     </div>
@@ -243,47 +241,54 @@
   <div class="services-container">
 
     <div class="text-center fade-in">
-      <h2 class="section-title">Our Services</h2>
+      <h2 class="section-title">How Can We Help You?</h2>
       <p class="section-sub">
-        At ABPO Africa Limited, we provide specialized advisory and business support services designed to help organizations strengthen governance, manage risk, improve operational efficiency, and make informed decisions in an increasingly complex business environment.
+        Every organization's challenges are different. Tell us what you're facing, and we'll point you to the team built to solve it.
       </p>
     </div>
 
     <div class="services-grid">
 
       <div class="service-card fade-in">
-       
-        <h3>IT Risk Advisory &amp; Analytics</h3>
-        <p>We help organizations identify, assess, and mitigate technology-related risks while leveraging data analytics to enhance decision-making and controls.</p>
+        <p class="service-question">Need to strengthen your IT environment?</p>
+        <h3>IT Risk & Cybersecurity</h3>
+        <p>We assess, test and harden your technology infrastructure, closing the gaps attackers look for and the controls auditors expect.</p>
         <a class="btn btn-ghost" href="it-risk-advisory.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       </div>
 
       <div class="service-card fade-in">
-        
-        <h3>Business Process Outsourcing</h3>
-        <p>We provide scalable outsourcing solutions that improve efficiency, reduce costs, and ensure operational excellence.</p>
-        <a class="btn btn-ghost" href="Business-process-outsourcing.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <p class="service-question">Need to automate a business process?</p>
+        <h3>Digital Solutions & Automation</h3>
+        <p>From custom software and cloud migration to the API integrations that connect your systems, we build the tools that take manual work off your team's plate.</p>
+        <a class="btn btn-ghost" href="digital-solutions-automation.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       </div>
 
       <div class="service-card fade-in">
-       
-        <h3>Fraud &amp; Forensic Investigation</h3>
-        <p>We detect, prevent, and investigate fraud through forensic analysis and risk assessments.</p>
+        <p class="service-question">Concerned about fraud?</p>
+        <h3>Fraud & Forensic Investigation</h3>
+        <p>We detect, investigate and help you recover from fraud, backed by forensic analysis that holds up under scrutiny.</p>
         <a class="btn btn-ghost" href="Fraud-forensic-investigation.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       </div>
 
       <div class="service-card fade-in">
-      
-        <h3>Risk Management &amp; Advisory</h3>
-        <p>We help organizations build strong risk frameworks and improve resilience.</p>
-        <a class="btn btn-ghost" href="risk-management-advisory.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <p class="service-question">Need to reduce operational workload?</p>
+        <h3>BPO & Managed Services</h3>
+        <p>We take on the processes that slow you down, running them reliably so your team can focus on what only they can do.</p>
+        <a class="btn btn-ghost" href="Business-process-outsourcing.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       </div>
 
       <div class="service-card fade-in">
-       
-        <h3>Data Analytics &amp; Business Insights</h3>
-        <p>We turn data into insights that drive smarter business decisions and performance improvement.</p>
-         <a class="btn btn-ghost" href="Data-analytics-business-insights.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <p class="service-question">Need sharper visibility into your data?</p>
+        <h3>Data Analytics & Business Insights</h3>
+        <p>We turn scattered data into a clear picture of your business, so every decision is backed by evidence, not guesswork.</p>
+        <a class="btn btn-ghost" href="Data-analytics-business-insights.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="service-card fade-in">
+        <p class="service-question">Worried about losing critical data?</p>
+        <h3>Risk Management & Data Recovery</h3>
+        <p>We build the governance frameworks, backups and recovery plans that keep your organization running when something goes wrong.</p>
+        <a class="btn btn-ghost" href="risk-management-advisory.php">Learn More <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
       </div>
 
     </div>
@@ -432,7 +437,7 @@
 
                     <p>Monday - Friday</p>
 
-                    <p>8:00 AM - 5:00 PM</p>
+                    <p>8:40 AM - 5:00 PM</p>
 
                 </div>
 
@@ -578,9 +583,9 @@
 
                     ABPO Africa Limited is a trusted consulting firm delivering
                     innovative business solutions across Africa through
-                    IT Risk Advisory, Business Process Outsourcing,
-                    Fraud & Forensic Investigation, Risk Management,
-                    Data Analytics and Digital Transformation.
+                    IT Risk & Cybersecurity, Digital Solutions & Automation,
+                    Fraud & Forensic Investigation, BPO & Managed Services,
+                    and Data Analytics & Business Insights.
 
                 </p>
 
@@ -616,15 +621,17 @@
 
                 <ul>
 
-                    <li><a href="it-risk-advisory.php">IT Advisory & Analytics</a></li>
+                    <li><a href="it-risk-advisory.php">IT Risk & Cybersecurity</a></li>
 
-                    <li><a href="Business-process-outsourcing.php">Business Process Outsourcing</a></li>
+                    <li><a href="digital-solutions-automation.php">Digital Solutions & Automation</a></li>
 
                     <li><a href="Fraud-forensic-investigation.php">Fraud & Forensic Investigation</a></li>
 
-                    <li><a href="risk-management-advisory.php">Risk Management & Advisory</a></li>
+                    <li><a href="Business-process-outsourcing.php">BPO & Managed Services</a></li>
 
                     <li><a href="Data-analytics-business-insights.php">Data Analytics & Business Insights</a></li>
+
+                    <li><a href="risk-management-advisory.php">Risk Management & Data Recovery</a></li>
 
                 </ul>
 

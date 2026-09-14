@@ -1,585 +1,665 @@
-/*==================================================
-    GOOGLE FONT
-==================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* =========================================================
+   ABPO AFRICA LIMITED — CAREERS PAGE (DENSE / FLAT)
+   Matches the main site's design system: sharp corners,
+   hairline borders, flat color blocks, tight rhythm.
+   Type: Montserrat (display) / Open Sans (body)
+   ========================================================= */
 
-/*==================================================
-    RESET
-==================================================*/
+:root{
+  --navy-900:#071730;
+  --navy-800:#0A1F44;
+  --navy-700:#12295A;
+  --teal-700:#0B6E70;
+  --teal-600:#0F8B8D;
+  --teal-500:#14A6A4;
+  --teal-100:#E6F6F5;
+  --gold-500:#D4AF37;
+  --gold-600:#B8912A;
+  --white:#FFFFFF;
+  --off-white:#F4F6F9;
+  --ink:#1E2A3B;
+  --muted:#5B6B82;
+  --border:#D7DEE8;
+  --border-strong:#B7C2D1;
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  --ease:cubic-bezier(.4,0,.2,1);
+  --fast:.15s;
+  --med:.25s;
+
+  --container:1320px;
+  --nav-h:64px;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
 body{
-    font-family:'Poppins',sans-serif;
-    color:#1f2937;
-    background:#f8fafc;
-    line-height:1.7;
+  font-family:"Open Sans",system-ui,-apple-system,sans-serif;
+  font-size:16px;
+  line-height:1.65;
+  color:var(--ink);
+  background:var(--white);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
 }
-
-img{
-    max-width:100%;
-    display:block;
+img{max-width:100%;display:block;}
+h1,h2,h3,h4,h5,h6{
+  font-family:"Montserrat",sans-serif;
+  color:var(--navy-800);
+  line-height:1.1;
+  letter-spacing:-.01em;
+  font-weight:700;
 }
+p{color:var(--muted);}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font-family:inherit;}
 
-a{
-    text-decoration:none;
-}
+:focus-visible{outline:2px solid var(--teal-600);outline-offset:2px;}
 
-ul{
-    list-style:none;
-}
+.container{max-width:var(--container);margin:0 auto;padding:0 32px;}
+section{scroll-margin-top:var(--nav-h);}
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-/*==================================================
-    BUTTONS
-==================================================*/
-
-.btn-primary,
-.btn-secondary{
-    display:inline-block;
-    padding:14px 32px;
-    border-radius:50px;
-    font-weight:600;
-    transition:.35s;
-}
-
-.btn-primary{
-    background:#0B2E63;
-    color:#fff;
-}
-
-.btn-primary:hover{
-    background:#174EA6;
-    transform:translateY(-3px);
-}
-
-.btn-secondary{
-    border:2px solid #fff;
-    color:#fff;
-}
-
-.btn-secondary:hover{
-    background:#fff;
-    color:#0B2E63;
-}
-
-/*==================================================
-    NAVIGATION
-==================================================*/
-
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
 .navbar{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:#fff;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    z-index:999;
+  position:fixed;
+  top:0;left:0;right:0;
+  z-index:1000;
+  height:var(--nav-h);
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  align-items:center;
 }
 
-.nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:85px;
+.navbar .nav-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  max-width:var(--container);
+  margin:0 auto;
+  padding:0 32px;
+  gap:20px;
 }
 
-.logo img{
-    height:60px;
-}
+.logo img{height:40px;width:auto;object-fit:contain;}
 
-.nav-links{
-    display:flex;
-    gap:35px;
-}
+.nav-links{display:flex;align-items:center;gap:0;}
+
+.nav-links li{list-style:none;}
 
 .nav-links a{
-    color:#222;
-    font-weight:500;
-    transition:.3s;
+  display:inline-flex;
+  align-items:center;
+  font-size:.94rem;
+  font-weight:600;
+  color:var(--navy-700);
+  padding:22px 16px;
+  border-bottom:2px solid transparent;
+  transition:color var(--fast) var(--ease), background var(--fast) var(--ease), border-color var(--fast) var(--ease);
 }
 
-.nav-links a:hover{
-    color:#0B2E63;
-}
+.nav-links a:hover{color:var(--teal-600);background:var(--off-white);border-bottom-color:var(--teal-600);}
 
 .nav-toggle{
-    display:none;
-    border:none;
-    background:none;
-    font-size:28px;
-    cursor:pointer;
+  display:none;
+  background:none;
+  border:none;
+  cursor:pointer;
+  color:var(--navy-800);
+  font-size:1.2rem;
+  padding:8px;
 }
 
-/*==================================================
-    HERO
-==================================================*/
-
-.career-hero{
-
-    position:relative;
-    min-height:100vh;
-
-    background:url("../images/career-banner.jpg") center/cover no-repeat;
-
-    display:flex;
-    align-items:center;
-    color:#fff;
-}
-
-.overlay{
-
-    position:absolute;
-    inset:0;
-
-    background:rgba(11,46,99,.75);
-
-}
-
-.hero-content{
-
-    position:relative;
-    z-index:2;
-    max-width:700px;
-
-}
-
-.hero-tag{
-
-    display:inline-block;
-    background:#16A34A;
-    padding:8px 18px;
-    border-radius:30px;
-    margin-bottom:20px;
-    font-size:14px;
-    letter-spacing:1px;
-
-}
-
-.hero-content h1{
-
-    font-size:60px;
-    line-height:1.1;
-    margin-bottom:25px;
-
-}
-
-.hero-content p{
-
-    font-size:18px;
-    margin-bottom:35px;
-
-}
-
-.hero-buttons{
-
-    display:flex;
-    gap:20px;
-
-}
-
-/*==================================================
-SECTION HEADINGS
-==================================================*/
-
-section{
-    padding:100px 0;
-}
-
-.section-heading{
-    text-align:center;
-    margin-bottom:60px;
-}
-
-.section-heading span{
-    color:#16A34A;
-    font-weight:700;
-    letter-spacing:2px;
-}
-
-.section-heading h2{
-    font-size:40px;
-    color:#0B2E63;
-    margin:15px 0;
-}
-
-.section-heading p{
-    max-width:700px;
-    margin:auto;
-    color:#64748b;
-}
-
-/*==================================================
-WHY JOIN
-==================================================*/
-
-.why-grid{
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-
-}
-
-.why-card{
-
-    background:#fff;
-    padding:35px;
-    border-radius:18px;
-    text-align:center;
-    transition:.35s;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-
-}
-
-.why-card:hover{
-
-    transform:translateY(-10px);
-
-}
-
-.why-card i{
-
-    font-size:45px;
-    color:#16A34A;
-    margin-bottom:20px;
-
-}
-
-.why-card h3{
-
-    margin-bottom:15px;
-    color:#0B2E63;
-
-}
-
-/*==================================================
-STATS
-==================================================*/
-
-.career-stats{
-
-    background:#0B2E63;
-    color:#fff;
-
-}
-
-.stats-grid{
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:30px;
-    text-align:center;
-
-}
-
-.stat-box h2{
-
-    font-size:55px;
-    margin-bottom:10px;
-
-}
-
-.stat-box p{
-
-    color:#dbeafe;
-
-}
-
-/*==================================================
-BENEFITS
-==================================================*/
-
-.benefits-grid{
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-
-}
-
-.benefit-card{
-
-    background:#fff;
-    border-radius:20px;
-    padding:35px;
-    text-align:center;
-    transition:.3s;
-    box-shadow:0 12px 28px rgba(0,0,0,.06);
-
-}
-
-.benefit-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.benefit-card i{
-
-    font-size:42px;
-    color:#16A34A;
-    margin-bottom:18px;
-
-}
-
-.benefit-card h3{
-
-    margin-bottom:12px;
-    color:#0B2E63;
-
-}
-
-/*==================================================
-INTERNSHIP
-==================================================*/
-
-.internship-grid{
-
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-
-}
-
-.intern-image img{
-
-    border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
-
-}
-
-.intern-content span{
-
-    color:#16A34A;
-    font-weight:700;
-
-}
-
-.intern-content h2{
-
-    font-size:42px;
-    color:#0B2E63;
-    margin:15px 0;
-
-}
-
-.intern-content ul{
-
-    margin:30px 0;
-
-}
-
-.intern-content li{
-
-    margin-bottom:15px;
-    position:relative;
-    padding-left:30px;
-
-}
-
-.intern-content li::before{
-
-    content:"✓";
-    position:absolute;
-    left:0;
-    color:#16A34A;
-    font-weight:bold;
-
-}
-
-/*==================================================
-JOBS
-==================================================*/
-
-.job-list{
-
-    display:flex;
+@media(max-width:860px){
+  .nav-toggle{display:flex;align-items:center;justify-content:center;}
+
+  .nav-links{
+    position:fixed;
+    top:var(--nav-h);
+    left:0;right:0;bottom:0;
+    height:calc(100vh - var(--nav-h));
+    background:var(--white);
     flex-direction:column;
-    gap:25px;
+    align-items:stretch;
+    padding:0;
+    overflow-y:auto;
+    transform:translateX(100%);
+    opacity:0;
+    visibility:hidden;
+    transition:transform var(--med) var(--ease), opacity var(--med) var(--ease), visibility var(--med);
+  }
+  .nav-links.active{transform:translateX(0);opacity:1;visibility:visible;}
 
+  .nav-links li{width:100%;}
+  .nav-links a{width:100%;padding:16px 24px;border-bottom:1px solid var(--border);}
 }
 
-.job-card{
-
-    background:#fff;
-    border-radius:15px;
-    padding:30px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-    transition:.3s;
-
+/* =========================================================
+   PAGE HERO
+   ========================================================= */
+.career-hero{
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:calc(var(--nav-h) + 56px) 0 56px;
+  background:var(--navy-900);
 }
 
-.job-card:hover{
+.career-hero .overlay{display:none;}
 
-    transform:translateX(8px);
-
+.career-hero .hero-content{
+  position:relative;
+  z-index:1;
+  max-width:760px;
+  margin:0 auto;
+  padding:0 32px;
+  text-align:left;
 }
 
-.job-card h3{
-
-    color:#0B2E63;
-    margin-bottom:10px;
-
+.career-hero h1{
+  font-size:clamp(2.2rem, 4.6vw, 3.6rem);
+  font-weight:800;
+  line-height:1.08;
+  letter-spacing:-.02em;
+  margin-bottom:20px;
+  color:var(--white);
 }
 
-.job-card p{
-
-    color:#64748b;
-
+.career-hero p{
+  font-size:clamp(1rem, 1.5vw, 1.15rem);
+  color:rgba(255,255,255,.8);
+  max-width:600px;
+  margin:0 0 30px;
+  line-height:1.65;
 }
 
-.job-card a{
+.hero-buttons{display:flex;gap:14px;flex-wrap:wrap;}
 
-    background:#16A34A;
-    color:#fff;
-    padding:12px 25px;
-    border-radius:30px;
-    transition:.3s;
-
+.hero-highlights{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0;
+  margin-top:36px;
+  border-top:1px solid rgba(255,255,255,.18);
+  padding-top:26px;
 }
-
-.job-card a:hover{
-
-    background:#15803d;
-
+.hero-highlights .highlight{
+  flex:1 1 190px;
+  padding-right:26px;
+  margin-right:26px;
+  border-right:1px solid rgba(255,255,255,.18);
 }
-
-/*==================================================
-PROCESS
-==================================================*/
-
-.process{
-
-    background:#eef4ff;
-
+.hero-highlights .highlight:last-child{border-right:none;margin-right:0;padding-right:0;}
+.hero-highlights .highlight strong{
+  display:block;
+  font-family:"Montserrat",sans-serif;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--white);
+  margin-bottom:6px;
 }
-
-.process-grid{
-
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:25px;
-    text-align:center;
-
-}
-
-.process-grid div{
-
-    background:#fff;
-    padding:35px;
-    border-radius:15px;
-    font-weight:600;
-    color:#0B2E63;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-
-}
-
-/*==================================================
-CTA
-==================================================*/
-
-.career-cta{
-
-    background:#0B2E63;
-    color:#fff;
-    text-align:center;
-
-}
-
-.career-cta h2{
-
-    font-size:45px;
-    margin-bottom:20px;
-
-}
-
-.career-cta p{
-
-    max-width:700px;
-    margin:0 auto 35px;
-
-}
-
-/*==================================================
-RESPONSIVE
-==================================================*/
-
-@media(max-width:992px){
-
-.hero-content h1{
-    font-size:46px;
-}
-
-.why-grid,
-.stats-grid,
-.benefits-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.internship-grid{
-    grid-template-columns:1fr;
-}
-
-.process-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
+.hero-highlights .highlight span{
+  font-size:.86rem;
+  color:rgba(255,255,255,.65);
+  line-height:1.5;
 }
 
 @media(max-width:768px){
-
-.nav-links{
-    display:none;
+  .hero-highlights .highlight{flex:1 1 100%;border-right:none;margin-right:0;padding-right:0;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.18);}
+  .hero-highlights .highlight:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
 }
 
-.nav-toggle{
-    display:block;
+.btn-primary{
+  background:var(--teal-600);
+  color:var(--white);
+  padding:14px 28px;
+  font-weight:700;
+  font-size:.95rem;
+  font-family:"Montserrat",sans-serif;
+  border:1px solid var(--teal-600);
+  cursor:pointer;
+  display:inline-block;
+  transition:background var(--fast) var(--ease), border-color var(--fast) var(--ease), color var(--fast) var(--ease);
 }
+.btn-primary:hover{background:var(--navy-900);border-color:var(--white);}
 
-.hero-content h1{
-    font-size:38px;
+.btn-secondary{
+  background:transparent;
+  border:1px solid rgba(255,255,255,.55);
+  color:var(--white);
+  padding:14px 28px;
+  font-weight:700;
+  font-size:.95rem;
+  font-family:"Montserrat",sans-serif;
+  display:inline-block;
+  transition:border-color var(--fast) var(--ease), background var(--fast) var(--ease);
 }
+.btn-secondary:hover{border-color:var(--gold-500);background:rgba(255,255,255,.08);}
 
-.hero-buttons{
-    flex-direction:column;
+.btn-gold{
+  background:var(--gold-500);
+  color:var(--navy-900);
+  padding:14px 28px;
+  font-weight:700;
+  font-size:.95rem;
+  font-family:"Montserrat",sans-serif;
+  border:1px solid var(--gold-500);
+  display:inline-block;
+  transition:background var(--fast) var(--ease), color var(--fast) var(--ease), border-color var(--fast) var(--ease);
 }
+.btn-gold:hover{background:transparent;color:var(--white);border-color:var(--white);}
 
-.why-grid,
-.stats-grid,
-.benefits-grid,
-.process-grid{
-    grid-template-columns:1fr;
+/* =========================================================
+   SHARED SECTION HEADING
+   ========================================================= */
+.section-heading{text-align:left;max-width:760px;margin:0 0 32px;}
+.section-heading span{
+  color:var(--teal-600);
+  font-family:"Montserrat",sans-serif;
+  font-weight:700;
+  letter-spacing:.12em;
+  font-size:.78rem;
+  text-transform:uppercase;
 }
-
-.job-card{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:20px;
-}
-
 .section-heading h2{
-    font-size:30px;
+  font-size:clamp(1.9rem,4vw,2.5rem);
+  margin:14px 0 14px;
+  color:var(--navy-800);
+  line-height:1.2;
+}
+.section-heading p{color:var(--muted);line-height:1.7;font-size:1.02rem;}
+
+/* =========================================================
+   WHY JOIN US — flat hairline tile grid
+   ========================================================= */
+.why-join{padding:56px 0;background:var(--white);}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
 }
 
-.career-cta h2{
-    font-size:32px;
+.why-card{
+  background:var(--white);
+  padding:30px 26px;
+  border-top:2px solid transparent;
+  transition:border-color var(--fast) var(--ease), background var(--fast) var(--ease);
+}
+.why-card:hover{border-top-color:var(--teal-500);background:var(--off-white);}
+.why-card h3{font-size:1.08rem;margin-bottom:8px;color:var(--navy-800);}
+.why-card p{font-size:.94rem;line-height:1.6;margin:0;}
+
+@media(max-width:992px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:576px){.why-grid{grid-template-columns:1fr;}}
+
+/* =========================================================
+   BENEFITS — flat hairline tile grid
+   ========================================================= */
+.benefits{padding:56px 0;background:var(--off-white);}
+
+.benefits-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  background:var(--border);
+  border:1px solid var(--border);
 }
 
+.benefit-card{
+  background:var(--white);
+  padding:30px 26px;
+  transition:background var(--fast) var(--ease);
+}
+.benefit-card:hover{background:var(--off-white);}
+
+.benefit-card i{
+  width:48px;height:48px;
+  background:var(--teal-100);
+  color:var(--teal-600);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;
+  margin-bottom:16px;
+  transition:background var(--med) var(--ease), color var(--med) var(--ease);
+}
+.benefit-card:hover i{background:var(--navy-800);color:var(--gold-500);}
+
+.benefit-card h3{font-size:1.08rem;margin-bottom:8px;color:var(--navy-800);}
+.benefit-card p{font-size:.94rem;line-height:1.6;margin:0;}
+
+@media(max-width:992px){.benefits-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:576px){.benefits-grid{grid-template-columns:1fr;}}
+
+/* =========================================================
+   INTERNSHIP — bordered two-column block, no soft shadow
+   ========================================================= */
+.internship{padding:56px 0;background:var(--white);}
+
+.internship-grid{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  border:1px solid var(--border);
+}
+
+.intern-panel{
+  background:var(--off-white);
+  border-right:1px solid var(--border);
+  padding:44px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.intern-panel h4{
+  font-family:"Montserrat",sans-serif;
+  font-size:1.05rem;
+  font-weight:700;
+  color:var(--navy-800);
+  margin-bottom:20px;
+}
+.intern-panel ul{display:flex;flex-direction:column;gap:14px;}
+.intern-panel li{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  font-size:.96rem;
+  color:var(--muted);
+  line-height:1.5;
+}
+.intern-panel li i{color:var(--teal-600);margin-top:3px;flex-shrink:0;}
+
+.intern-content{padding:44px;display:flex;flex-direction:column;justify-content:center;}
+.intern-content h2{font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:16px;color:var(--navy-800);}
+.intern-content p{margin-bottom:20px;line-height:1.7;font-size:1rem;}
+
+.intern-duration{
+  display:flex;
+  gap:0;
+  margin-bottom:24px;
+  border:1px solid var(--border);
+}
+.duration-item{
+  flex:1;
+  padding:18px 20px;
+  border-right:1px solid var(--border);
+}
+.duration-item:last-child{border-right:none;}
+.duration-item strong{
+  display:block;
+  font-family:"Montserrat",sans-serif;
+  font-size:1.3rem;
+  font-weight:800;
+  color:var(--teal-600);
+  margin-bottom:4px;
+}
+.duration-item span{font-size:.86rem;color:var(--muted);}
+
+.intern-content ul{margin-bottom:28px;}
+.intern-content li{
+  position:relative;
+  padding-left:22px;
+  margin-bottom:10px;
+  color:var(--ink);
+  font-weight:600;
+  font-size:.94rem;
+}
+.intern-content li::before{
+  content:"";
+  position:absolute;
+  left:0;top:8px;
+  width:7px;height:7px;
+  background:var(--gold-500);
+}
+
+@media(max-width:900px){
+  .internship-grid{grid-template-columns:1fr;}
+  .intern-panel{padding:32px 24px;border-right:none;border-bottom:1px solid var(--border);}
+  .intern-content{padding:32px 24px;}
+}
+
+/* =========================================================
+   HIRING PROCESS — dense flow strip
+   ========================================================= */
+.process{padding:56px 0;background:var(--off-white);}
+
+.process-flow{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:10px;
+  border-top:1px solid var(--border);
+  padding-top:32px;
+}
+.process-flow .step{
+  font-family:"Montserrat",sans-serif;
+  font-weight:600;
+  font-size:.98rem;
+  color:var(--navy-800);
+  padding:12px 18px;
+  background:var(--white);
+  border:1px solid var(--border);
+}
+.process-flow .arrow{color:var(--gold-500);font-size:1.1rem;flex-shrink:0;}
+
+@media(max-width:768px){
+  .process-flow .step{font-size:.9rem;padding:10px 14px;}
+}
+
+/* =========================================================
+   CAREER CTA
+   ========================================================= */
+.career-cta{
+  padding:56px 32px;
+  text-align:center;
+  background:var(--navy-900);
+}
+.career-cta h2{color:var(--white);font-size:clamp(1.7rem,3.2vw,2.3rem);margin-bottom:14px;}
+.career-cta p{color:rgba(255,255,255,.72);max-width:520px;margin:0 auto 26px;line-height:1.7;}
+
+/* =========================================================
+   FOOTER — matches the main site footer
+   ========================================================= */
+.footer{
+  background:var(--navy-900);
+  color:rgba(255,255,255,.72);
+}
+.footer-overlay{width:100%;padding:48px 32px 20px;max-width:var(--container);margin:0 auto;}
+.footer-container{
+  max-width:100%;
+  display:grid;
+  grid-template-columns:2fr 1fr 1.3fr 1.3fr;
+  gap:32px;
+  padding-bottom:32px;
+  border-bottom:1px solid rgba(255,255,255,.14);
+}
+.footer-logo{width:150px;margin-bottom:14px;filter:brightness(0) invert(1);}
+.footer .company p{color:rgba(255,255,255,.6);line-height:1.75;font-size:.95rem;}
+.footer-column h3{color:var(--white);margin-bottom:14px;font-size:1.02rem;}
+.footer-column li{margin-bottom:9px;}
+.footer-column a{color:rgba(255,255,255,.6);font-size:.9rem;transition:color var(--fast) var(--ease);}
+.footer-column a:hover{color:var(--teal-500);}
+.footer-column p{color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:10px;font-size:.9rem;}
+.footer-column i{color:var(--teal-500);width:20px;margin-right:8px;}
+.footer hr{display:none;}
+.footer-bottom{
+  max-width:100%;
+  padding-top:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:16px;
+}
+.footer-bottom p{color:rgba(255,255,255,.48);font-size:.9rem;}
+.footer-links{display:flex;gap:14px;align-items:center;}
+.footer-links span{color:rgba(255,255,255,.3);}
+.footer-links a{color:rgba(255,255,255,.7);font-size:.9rem;transition:color var(--fast) var(--ease);}
+.footer-links a:hover{color:var(--teal-500);}
+
+@media(max-width:1100px){.footer-container{grid-template-columns:1fr 1fr;}}
+@media(max-width:768px){
+  .footer-container{grid-template-columns:1fr;gap:28px;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;}
+}
+
+/* =========================================================
+   RESPONSIVE SPACING
+   ========================================================= */
+@media(max-width:768px){
+  .why-join,.benefits,.internship,.process{padding:44px 0;}
+}
+
+/* =========================================================
+   APPLY NOW — two-panel application form
+   ========================================================= */
+.apply-section{padding:56px 0;background:var(--white);}
+
+.apply-grid{
+  display:grid;
+  grid-template-columns:1fr 1.5fr;
+  border:1px solid var(--border);
+}
+
+.apply-info{
+  background:var(--navy-900);
+  color:rgba(255,255,255,.82);
+  padding:44px;
+}
+.apply-info h2{color:var(--white);font-size:1.6rem;margin-bottom:16px;}
+.apply-info p{color:rgba(255,255,255,.72);line-height:1.7;margin-bottom:32px;font-size:.98rem;}
+
+.apply-contact{display:flex;flex-direction:column;gap:18px;list-style:none;padding:0;margin:0;}
+.apply-contact li{
+  display:flex;
+  align-items:flex-start;
+  gap:14px;
+  font-size:.92rem;
+  line-height:1.6;
+  color:rgba(255,255,255,.85);
+}
+.apply-contact i{
+  flex-shrink:0;
+  width:34px;height:34px;
+  background:rgba(255,255,255,.08);
+  color:var(--gold-500);
+  display:flex;align-items:center;justify-content:center;
+  font-size:.9rem;
+  margin-top:2px;
+}
+
+.apply-form-panel{background:var(--white);padding:44px;}
+
+.apply-form-panel .input-group{margin-bottom:20px;}
+.apply-form-panel .input-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.apply-form-panel label{
+  display:block;
+  margin-bottom:8px;
+  font-weight:600;
+  color:var(--teal-700);
+  font-size:.86rem;
+}
+.apply-form-panel .req{color:#d33;margin-left:2px;}
+
+.apply-form-panel input[type="text"],
+.apply-form-panel input[type="email"],
+.apply-form-panel input[type="tel"],
+.apply-form-panel select,
+.apply-form-panel textarea{
+  width:100%;
+  padding:13px 16px;
+  border:1px solid var(--border-strong);
+  outline:none;
+  font-size:.95rem;
+  font-family:inherit;
+  color:var(--ink);
+  background:var(--white);
+  transition:border-color var(--fast) var(--ease);
+}
+.apply-form-panel input:focus,
+.apply-form-panel select:focus,
+.apply-form-panel textarea:focus{border-color:var(--teal-600);}
+.apply-form-panel textarea{resize:vertical;min-height:110px;}
+
+.apply-form-panel .file-input{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  border:1px solid var(--border-strong);
+  padding:8px 12px;
+}
+.apply-form-panel .file-input input[type="file"]{
+  position:absolute;
+  width:1px;height:1px;
+  overflow:hidden;
+  opacity:0;
+}
+.apply-form-panel .file-btn{
+  flex-shrink:0;
+  background:var(--off-white);
+  border:1px solid var(--border-strong);
+  padding:9px 18px;
+  font-weight:700;
+  font-size:.86rem;
+  color:var(--navy-800);
+  cursor:pointer;
+  margin-bottom:0;
+}
+.apply-form-panel .file-btn:hover{background:var(--border);}
+.apply-form-panel .file-name{font-size:.86rem;color:var(--muted);}
+.apply-form-panel small{display:block;margin-top:8px;font-size:.8rem;color:var(--muted);}
+
+.apply-form-panel .consent{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin-bottom:26px;
+  font-size:.86rem;
+  line-height:1.6;
+  color:var(--muted);
+  cursor:pointer;
+}
+.apply-form-panel .consent input{margin-top:3px;flex-shrink:0;}
+.apply-form-panel .consent a{color:var(--teal-600);text-decoration:underline;}
+
+.apply-form-panel button[type="submit"]{
+  width:100%;
+  background:var(--navy-800);
+  color:var(--white);
+  border:1px solid var(--navy-800);
+  padding:15px 30px;
+  font-weight:700;
+  font-size:.95rem;
+  font-family:"Montserrat",sans-serif;
+  cursor:pointer;
+  transition:background var(--fast) var(--ease), opacity var(--fast) var(--ease);
+}
+.apply-form-panel button[type="submit"]:hover:not(:disabled){background:var(--teal-600);border-color:var(--teal-600);}
+.apply-form-panel button[type="submit"]:disabled{opacity:.7;cursor:not-allowed;}
+
+.form-response{
+  display:none;
+  margin-top:18px;
+  padding:14px 16px;
+  font-size:.9rem;
+  font-weight:600;
+  text-align:center;
+}
+.form-response.success{background:rgba(16,185,129,.08);border:1px solid rgb(16,185,129);color:rgb(5,150,105);}
+.form-response.error{background:rgba(239,68,68,.08);border:1px solid rgb(239,68,68);color:rgb(220,38,38);}
+
+@media(max-width:900px){
+  .apply-grid{grid-template-columns:1fr;}
+  .apply-info,.apply-form-panel{padding:32px 24px;}
+}
+@media(max-width:560px){
+  .apply-form-panel .input-row{grid-template-columns:1fr;}
 }
