@@ -70,13 +70,7 @@
 <section class="hero hero-flat" id="page-top">
     <div class="hero-content fade-in">
 
-        <p class="breadcrumb">
-            <a href="index.php">Home</a>
-            <i class="fas fa-chevron-right" aria-hidden="true"></i>
-            <a href="index.php#services">Services</a>
-            <i class="fas fa-chevron-right" aria-hidden="true"></i>
-            Risk Management & Data Recovery
-        </p>
+      
 
         <h1>
             Risk Management &amp; Data Recovery
@@ -86,33 +80,7 @@
             recovery capabilities that keep operations running — and data
             intact — when something goes wrong.
         </p>
-        <div class="hero-btns">
-            <a href="index.php#contact" class="btn-primary">
-                Build Your Continuity Plan
-            </a>
-            <a href="#approach" class="btn-outline">
-                See Our Approach
-            </a>
-        </div>
-
-        <div class="hero-stats">
-            <div class="stat">
-                <strong>Risk Frameworks</strong>
-                <span>Structured, board-ready risk management</span>
-            </div>
-            <div class="stat">
-                <strong>Business Continuity</strong>
-                <span>A plan for operating through disruption</span>
-            </div>
-            <div class="stat">
-                <strong>Backup &amp; Recovery</strong>
-                <span>Getting your data and systems back, fast</span>
-            </div>
-            <div class="stat">
-                <strong>Compliance Advisory</strong>
-                <span>Meeting regulatory and audit expectations</span>
-            </div>
-        </div>
+        
 
     </div>
 
@@ -143,9 +111,7 @@
                     incident becomes a manageable disruption, not a crisis.
                 </p>
 
-                <a href="index.php#contact" class="btn-primary">
-                    Talk to Our Team
-                </a>
+                
 
             </div>
 
@@ -188,7 +154,7 @@
         <div class="bento-grid">
 
             <div class="card fade-in">
-                <span class="card-number">01</span>
+                
                 <h3>Enterprise Risk Management Frameworks</h3>
                 <p>
                     We build the structures, policies and reporting that give
@@ -197,7 +163,7 @@
             </div>
 
             <div class="card fade-in">
-                <span class="card-number">02</span>
+                
                 <h3>Business Continuity Planning</h3>
                 <p>
                     We design continuity plans that keep critical functions
@@ -206,7 +172,7 @@
             </div>
 
             <div class="card fade-in">
-                <span class="card-number">03</span>
+                
                 <h3>Backup &amp; Disaster Recovery</h3>
                 <p>
                     We design, implement and test backup and recovery systems so
@@ -215,7 +181,7 @@
             </div>
 
             <div class="card fade-in">
-                <span class="card-number">04</span>
+                
                 <h3>Regulatory &amp; Compliance Advisory</h3>
                 <p>
                     We help you meet the risk and continuity expectations of
@@ -224,7 +190,7 @@
             </div>
 
             <div class="card fade-in">
-                <span class="card-number">05</span>
+                
                 <h3>Risk Registers &amp; Reporting</h3>
                 <p>
                     We maintain living risk registers and reporting dashboards
@@ -233,7 +199,7 @@
             </div>
 
             <div class="card fade-in">
-                <span class="card-number">06</span>
+                
                 <h3>Crisis &amp; Incident Response Planning</h3>
                 <p>
                     We prepare the playbooks and response structures your team
@@ -243,22 +209,7 @@
 
         </div>
 
-        <div class="difference fade-in" id="approach">
-            <h3>Our Approach</h3>
-            <div class="difference-flow">
-                <span class="step">Understand your risk landscape</span>
-                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
-                <span class="step">Assess exposure &amp; impact</span>
-                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
-                <span class="step">Design the framework</span>
-                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
-                <span class="step">Build recovery plans</span>
-                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
-                <span class="step">Test &amp; rehearse</span>
-                <i class="fas fa-arrow-right arrow" aria-hidden="true"></i>
-                <span class="step">Monitor &amp; refine</span>
-            </div>
-        </div>
+
 
     </div>
 
