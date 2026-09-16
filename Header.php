@@ -1,52 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>ABPO Africa Limited</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<nav id="navbar">
-  <div class="nav-logo">
-    <img src="logo.png" alt="ABPO AFRICA LOGO" class="nav-logo-img">
-  </div>
-
-  <div class="nav-links" id="navLinks">
-
-    <!-- Homepage links -->
-    <a href="index.php#home">Home</a>
-    <a href="index.php#about">About Us</a>
-
-    <!-- Services dropdown -->
-    <div class="dropdown">
-      <a href="index.php#services" class="dropbtn">Services</a>
-
-      <div class="dropdown-content">
-        <a href="it-risk-advisory.php">IT Risk Advisory & Analytics</a>
-        <a href="service.php?slug=business-process-outsourcing">Business Process Outsourcing</a>
-        <a href="service.php?slug=fraud-forensic-investigation">Fraud & Forensic Investigation</a>
-        <a href="service.php?slug=risk-management-advisory">Risk Management & Advisory</a>
-        <a href="service.php?slug=data-analytics-business-insights">Data Analytics & Business Insights</a>
-      </div>
+<!-- NAV -->
+<nav id="navbar" aria-label="Primary">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.php#home" aria-label="ABPO Africa Limited — Home">
+        <img src="logo.png" alt="ABPO Africa Limited logo">
+      </a>
     </div>
 
-    <a href="index.php#why-us">Why Us</a>
-    <a href="blog.php">Blog</a>
-    <a href="careers.php">Careers</a>
-    <a href="index.php#contact">Contact</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.php#home">Home</a>
+      <a href="index.php#about">About Us</a>
+
+      <div class="dropdown" id="servicesDropdown">
+        <a href="index.php#services" class="dropbtn" aria-haspopup="true" aria-expanded="false">
+          Services
+          <i class="fas fa-chevron-down dropdown-caret" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-content">
+          <a href="it-risk-advisory.php">IT Risk &amp; Cybersecurity</a>
+          <a href="digital-solutions-automation.php">Digital Solutions &amp; Automation</a>
+          <a href="Fraud-forensic-investigation.php">Fraud &amp; Forensic Investigation</a>
+          <a href="Business-process-outsourcing.php">BPO &amp; Managed Services</a>
+          <a href="Data-analytics-business-insights.php">Data Analytics &amp; Business Insights</a>
+          <a href="risk-management-advisory.php">Risk Management &amp; Data Recovery</a>
+        </div>
+      </div>
+
+      <a href="index.php#why-us">Why Us</a>
+      <a href="blog.php">Blog</a>
+      <a href="careers.php">Careers</a>
+      <a href="index.php#contact">Contact</a>
+      <a href="testimonials.php">Testimonials</a>
+      <!-- Mobile Quote Link -->
+      <a href="index.php#contact" class="mobile-cta" style="display: none;">Get a Quote</a>
+    </div>
 
     <a href="index.php#contact" class="nav-cta">Get a Quote</a>
 
+    <!-- Hamburger toggle button -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+      <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
   </div>
-
-  <button class="nav-toggle" id="navToggle" aria-label="Menu">
-    <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-        d="M4 6h16M4 12h16M4 18h16"/>
-    </svg>
-  </button>
 </nav>
